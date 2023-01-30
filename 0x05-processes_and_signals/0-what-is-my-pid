@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This project teaches us how to display our own id using $$
+echo "$$"
