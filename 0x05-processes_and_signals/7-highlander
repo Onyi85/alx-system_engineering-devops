@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
-#This project displays to infinity and beyond with a sleep
-#between each iteration
-signal_handler()
-{
-	echo 'I am invincible'
-}
-trap signal_handler SIGTERM
+# This project allows us to execute a specified command when a certain
+# signal is received
+trap 'echo "I am invincible!!!"' SIGTERM
 while true;
 do
 	echo "To infinity and beyond"
