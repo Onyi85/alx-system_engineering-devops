@@ -1,0 +1,12 @@
+#check if firewall is enable
+sudo ufw status
+#if disabled turn it on
+sudo ufw enable
+#configure firewall for ssh pot
+sudo ufw allow ssh
+#configure firewall for https pot
+sudo ufw allow https
+#configure firewall for htto pot
+sudo ufw allow http
+#to check status
+sudo ufw status
